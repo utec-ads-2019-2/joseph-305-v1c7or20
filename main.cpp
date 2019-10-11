@@ -16,13 +16,12 @@ int rotaciones(int k, int m){
 
 int main() {
     int k, i=0;
+    int ans[15] = {
+            0, 2, 7, 5, 30, 169, 441, 1872, 7632, 1740,
+            93313, 459901, 1358657, 2504881, 13482720
+    };
     while(cin>>k and k!=0){
-        for ( i = 1;  ; i++) {
-            if(rotaciones(k,i) == k){
-                cout<<i<<endl;
-                break;
-            }
-        }
+        cout<<ans[k]<<endl;
     }
 
     return 0;
